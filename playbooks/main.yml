@@ -5,6 +5,8 @@
   vars:
     backup_target: "C:\\temp\\new"
     nas_path: "\\test\nas"
+  collections:
+    - ansible.windows
   tasks:
     - name: Install Windows Server Backup feature
       win_feature:
